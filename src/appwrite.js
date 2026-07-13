@@ -6,7 +6,7 @@ const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
 const ENDPOINT = import.meta.env.VITE_APPWRITE_ENDPOINT || "https://cloud.appwrite.io/v1";
 
 const client = new Client()
-    .setEndpoint(ENDPOINT)
+    .setEndpoint('https://cloud.appwrite.io/v1')
     .setProject(PROJECT_ID);
 
 const database = new Databases(client);
